@@ -1,0 +1,90 @@
+export type Lang = "tg" | "ru" | "en";
+
+export type Trio = {
+  id: string;
+  tg: string;
+  ru: string;
+  en: string;
+};
+
+export const LANGS: Lang[] = ["tg", "ru", "en"];
+
+export const LANG_SHORT: Record<Lang, string> = {
+  tg: "ТҶ",
+  ru: "РУ",
+  en: "EN",
+};
+
+/** Meanings shared by Tajik, Russian, and English. Strings are unique on purpose. */
+export const LEXICON: Trio[] = [
+  { id: "water", tg: "об", ru: "вода", en: "water" },
+  { id: "sun", tg: "офтоб", ru: "солнце", en: "sun" },
+  { id: "moon", tg: "моҳ", ru: "луна", en: "moon" },
+  { id: "star", tg: "ситора", ru: "звезда", en: "star" },
+  { id: "mountain", tg: "кӯҳ", ru: "гора", en: "mountain" },
+  { id: "river", tg: "дарё", ru: "река", en: "river" },
+  { id: "spring", tg: "чашма", ru: "родник", en: "spring" },
+  { id: "rain", tg: "борон", ru: "дождь", en: "rain" },
+  { id: "snow", tg: "барф", ru: "снег", en: "snow" },
+  { id: "wind", tg: "бод", ru: "ветер", en: "wind" },
+  { id: "fire", tg: "оташ", ru: "огонь", en: "fire" },
+  { id: "light", tg: "нур", ru: "свет", en: "light" },
+  { id: "night", tg: "шаб", ru: "ночь", en: "night" },
+  { id: "day", tg: "рӯз", ru: "день", en: "day" },
+  { id: "sky", tg: "осмон", ru: "небо", en: "sky" },
+  { id: "earth", tg: "замин", ru: "земля", en: "earth" },
+  { id: "stone", tg: "санг", ru: "камень", en: "stone" },
+  { id: "gold", tg: "тилло", ru: "золото", en: "gold" },
+  { id: "tree", tg: "дарахт", ru: "дерево", en: "tree" },
+  { id: "flower", tg: "гул", ru: "цветок", en: "flower" },
+  { id: "garden", tg: "боғ", ru: "сад", en: "garden" },
+  { id: "apple", tg: "себ", ru: "яблоко", en: "apple" },
+  { id: "bread", tg: "нон", ru: "хлеб", en: "bread" },
+  { id: "tea", tg: "чой", ru: "чай", en: "tea" },
+  { id: "house", tg: "хона", ru: "дом", en: "house" },
+  { id: "door", tg: "дар", ru: "дверь", en: "door" },
+  { id: "key", tg: "калид", ru: "ключ", en: "key" },
+  { id: "road", tg: "роҳ", ru: "дорога", en: "road" },
+  { id: "city", tg: "шаҳр", ru: "город", en: "city" },
+  { id: "village", tg: "деҳа", ru: "деревня", en: "village" },
+  { id: "school", tg: "мактаб", ru: "школа", en: "school" },
+  { id: "book", tg: "китоб", ru: "книга", en: "book" },
+  { id: "letter", tg: "нома", ru: "письмо", en: "letter" },
+  { id: "friend", tg: "дӯст", ru: "друг", en: "friend" },
+  { id: "mother", tg: "модар", ru: "мама", en: "mother" },
+  { id: "child", tg: "кӯдак", ru: "ребёнок", en: "child" },
+  { id: "heart", tg: "дил", ru: "сердце", en: "heart" },
+  { id: "hand", tg: "даст", ru: "рука", en: "hand" },
+  { id: "eye", tg: "чашм", ru: "глаз", en: "eye" },
+  { id: "time", tg: "вақт", ru: "время", en: "time" },
+  { id: "peace", tg: "сулҳ", ru: "мир", en: "peace" },
+  { id: "market", tg: "бозор", ru: "базар", en: "market" },
+  { id: "song", tg: "суруд", ru: "песня", en: "song" },
+  { id: "bird", tg: "парранда", ru: "птица", en: "bird" },
+  { id: "fish", tg: "моҳӣ", ru: "рыба", en: "fish" },
+  { id: "horse", tg: "асп", ru: "лошадь", en: "horse" },
+  { id: "salt", tg: "намак", ru: "соль", en: "salt" },
+  { id: "milk", tg: "шир", ru: "молоко", en: "milk" },
+  { id: "honey", tg: "асал", ru: "мёд", en: "honey" },
+  { id: "morning", tg: "субҳ", ru: "утро", en: "morning" },
+  { id: "evening", tg: "шом", ru: "вечер", en: "evening" },
+  { id: "winter", tg: "зимистон", ru: "зима", en: "winter" },
+  { id: "summer", tg: "тобистон", ru: "лето", en: "summer" },
+  { id: "brother", tg: "бародар", ru: "брат", en: "brother" },
+  { id: "sister", tg: "хоҳар", ru: "сестра", en: "sister" },
+  { id: "language", tg: "забон", ru: "язык", en: "language" },
+  { id: "word", tg: "калима", ru: "слово", en: "word" },
+  { id: "silk", tg: "абрешим", ru: "шёлк", en: "silk" },
+  { id: "rice", tg: "биринҷ", ru: "рис", en: "rice" },
+  { id: "grape", tg: "ангур", ru: "виноград", en: "grape" },
+  { id: "pomegranate", tg: "анор", ru: "гранат", en: "pomegranate" },
+  { id: "lake", tg: "кӯл", ru: "озеро", en: "lake" },
+  { id: "gate", tg: "дарвоза", ru: "ворота", en: "gate" },
+  { id: "country", tg: "кишвар", ru: "страна", en: "country" },
+  { id: "money", tg: "пул", ru: "деньги", en: "money" },
+  { id: "bridge", tg: "кӯпрук", ru: "мост", en: "bridge" },
+  { id: "valley", tg: "водӣ", ru: "долина", en: "valley" },
+  { id: "cotton", tg: "пахта", ru: "хлопок", en: "cotton" },
+  { id: "cat", tg: "гурба", ru: "кошка", en: "cat" },
+  { id: "dog", tg: "саг", ru: "собака", en: "dog" },
+];

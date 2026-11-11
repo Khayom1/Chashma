@@ -1,0 +1,89 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bg: #071311;
+  --color-surface: #10241e;
+  --color-raised: #173028;
+  --color-fg: #e8f3ee;
+  --color-muted: #8eaea2;
+  --color-line: #2a4a40;
+  --color-spring: #2ec4a6;
+  --color-ink: #06211c;
+  --color-clay: #e2a15a;
+  --font-sans: "Noto Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Unbounded", "Noto Sans", ui-sans-serif, sans-serif;
+}
+
+@layer base {
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+
+  html,
+  body {
+    height: 100%;
+  }
+
+  body {
+    margin: 0;
+    background:
+      radial-gradient(ellipse at 50% -8%, color-mix(in oklab, var(--color-spring) 18%, transparent), transparent 46%),
+      var(--color-bg);
+    color: var(--color-fg);
+    font-family: var(--font-sans);
+    line-height: 1.5;
+    text-rendering: optimizeLegibility;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  ::selection {
+    background: var(--color-spring);
+    color: var(--color-ink);
+  }
+
+  button:disabled {
+    cursor: default;
+  }
+}
+
+@keyframes chashma-ripple {
+  0% {
+    transform: scale(0.82);
+    opacity: 0.45;
+  }
+  100% {
+    transform: scale(1.18);
+    opacity: 0;
+  }
+}
+
+.chashma-ripple {
+  animation: chashma-ripple 2.8s ease-out infinite;
+}
+
+@keyframes chashma-shake {
+  20% {
+    transform: translateX(-5px);
+  }
+  40% {
+    transform: translateX(5px);
+  }
+  60% {
+    transform: translateX(-3px);
+  }
+  80% {
+    transform: translateX(2px);
+  }
+}
+
+.chashma-shake {
+  animation: chashma-shake 0.38s ease-in-out;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .chashma-ripple,
+  .chashma-shake {
+    animation: none;
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "url": "http://127.0.0.1:8080/",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "Чашма",
+      "hasCanvas": false,
+      "bodyTextLen": 174,
+      "bodyTextHash": "cdae7a05611bc5e4b1f294cb248281c2d1cfb6461c6c35803f84fb01e29387f7",
+      "bodyTextPrefix": "Чашма Се забон. Як чашма. Муаллиф · Хайём Абдурахмонов Бозӣ кард",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "Чашма",
+      "hasCanvas": false,
+      "bodyTextLen": 174,
+      "bodyTextHash": "cdae7a05611bc5e4b1f294cb248281c2d1cfb6461c6c35803f84fb01e29387f7",
+      "bodyTextPrefix": "Чашма Се забон. Як чашма. Муаллиф · Хайём Абдурахмонов Бозӣ кард",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/app-builder-preview.json"
+}
